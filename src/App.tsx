@@ -1,16 +1,14 @@
 import './App.css';
-import React from 'react';
-//import Header from './components/common/header';
+import Header from './components/common/header';
 import { Outlet } from 'react-router';
+import { FC } from 'react';
 
-function App()
-{
-   return
-   (
+const App: FC = () => {
+   return (
       <div>
          <h1>asdfqkawdfckjaeswf</h1>
-         {/* <Header /> */}
-         {/* <Outlet />> */}
+         <Header />
+         <Outlet />
       </div>
    );
 }
